@@ -1,9 +1,9 @@
-def solution(phoneBook):    
-    phoneBook.sort()
-    for i in range(len(phoneBook) - 1):
-        if (phoneBook[i+1].startswith(phoneBook[i])):
+def solution(phone_book):    
+    phone_book.sort()
+    for i in range(len(phone_book) - 1):
+        if (phone_book[i+1].startswith(phone_book[i])):
             return False
-    return True
+    return True	
 
 # 해시를 사용한 답안
 # def solution(phoneBook):
